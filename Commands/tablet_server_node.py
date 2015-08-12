@@ -52,14 +52,14 @@ class RobotComm(Protocol):
 
     	print "Type: ", behavior_type
     	print "Location: ", location
-        
+
         # Publish via ROS
         msg = Float64MultiArray()
         msg.data = [behavior_type, x, y, z, theta]
         self.publisher.publish(msg)
 
-                for c in self.factory.clients:
-                c.message_position()
+        for c in self.factory.clients:
+            c.message_position()
 
 
 
