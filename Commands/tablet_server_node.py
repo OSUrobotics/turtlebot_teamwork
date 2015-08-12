@@ -1,5 +1,7 @@
 #!/usr/bin/env/python
 
+import rospy
+from std_msgs.msg import Float64MultiArray
 from twisted.internet import reactor
 from twisted.internet.protocol import Factory, Protocol
 
@@ -7,6 +9,10 @@ from twisted.internet.protocol import Factory, Protocol
 ## location that is comma separated, x, y, z, theta
 
 class RobotComm(Protocol):
+    def __init__(self):
+        self.publisher = rospy.Publisher('/tablet_command', String)  # ROS Publisher
+
+
     def connectionMade(self):
         print "a client connected"
         self.factory.clients.append(self)
@@ -46,31 +52,41 @@ class RobotComm(Protocol):
 
     	print "Type: ", behavior_type
     	print "Location: ", location
+        
+        # Publish via ROS
+        msg = Float64MultiArray()
+        msg.data = [behavior_type, x, y, z, theta]
+        self.publisher.publish(msg)
 
-    	for c in self.factory.clients:
+                for c in self.factory.clients:
                 c.message_position()
 
 
 
     def message_position(self):
-    	# list of num robots, followed by csv x,y,theta    	
-    	bot = [x for x in xrange(1,10)]
-    	num_bots = 3
-    	msg = str(num_bots) + ","
+        # list of num robots, followed by csv x,y,theta     
+        bot = [x for x in xrange(1,10)]
+        num_bots = 3
+        msg = str(num_bots) + ","
 
-    	for bot in num_bots:
-    		x = bot[0]
-    		y = bot[1]
-    		z = bot[2]
-    		msg = msg + x + "," + y + "," + z + "," 
+        for bot in num_bots:
+            x = bot[0]
+            y = bot[1]
+            z = bot[2]
+            msg = msg + x + "," + y + "," + z + "," 
 
 
         self.transport.write(msg + '\n')
 
 
-def main():
-	# Start the server/reactor loop
+    def message(self, message):
+        self.transport.write(message + '\n')
 
+def main():
+    # Run ROS node
+    rospy.init_node('tablet_server')
+
+	# Start the server/reactor loop
 	factory = Factory()
 	factory.protocol = RobotComm
 	factory.clients = []
