@@ -4,38 +4,38 @@ from twisted.internet import reactor
 from twisted.internet.protocol import Factory, Protocol
 
 class RobotComm(Protocol):
+    def __init__(self):
+        client_number = 0
+        d = dict()
     def connectionMade(self):
         print "a client connected"
         self.factory.clients.append(self)
         print "clients are ", self.factory.clients
+        client_number = client_number+1
 
     def connectionLost(self, reason):
         self.factory.clients.remove(self)
+        client_number = client_number-1
+
 
     def dataReceived(self, data):
     	print "Data received"
     	print data
-    	ip, pos, turtle_id = eval(data)
+    	ip, pos = eval(data)
         print ip
         print pos
-        print turtle_id
-    # a = data.split(':')
-    # print a
-    # if len(a) > 1:
-    #     command = a[0]
-    #     content = a[1]
-
-    #     msg = ""
-    #     if command == "iam":
-    #         self.name = content
-    #         msg = self.name + " has joined"
-
-    #     elif command == "msg":
-    #         msg = self.name + ": " + content
-    #         print msg
-
-    #     for c in self.factory.clients:
-    #         c.message(msg)
+        key = ip
+    for i in xrange(100):
+        if key in d:
+            frame_id = d[key][1]
+            data = [pos,frame_id]
+            dict[ip] = (data)
+        else:
+            frame_id = "turtlebot_%d" % client_number
+            data = [pos,frame_id]
+            dict[ip] = (data)
+        
+        
 
     def message(self, message):
         self.transport.write(message + '\n')
