@@ -47,8 +47,25 @@ class RobotComm(Protocol):
     	print "Type: ", behavior_type
     	print "Location: ", location
 
-    def message(self, message):
-        self.transport.write(message + '\n')
+    	for c in self.factory.clients:
+                c.message_position()
+
+
+
+    def message_position(self):
+    	# list of num robots, followed by csv x,y,theta    	
+    	bot = [x for x in xrange(1,10)]
+    	num_bots = 3
+    	msg = str(num_bots) + ","
+
+    	for bot in num_bots:
+    		x = bot[0]
+    		y = bot[1]
+    		z = bot[2]
+    		msg = msg + x + "," + y + "," + z + "," 
+
+
+        self.transport.write(msg + '\n')
 
 
 def main():
