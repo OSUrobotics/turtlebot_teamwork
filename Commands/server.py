@@ -19,14 +19,20 @@ class RobotComm(Protocol):
     	print "Data received"
     	print data
        
-        # get behavior type
+        
         msg = data.split(',')
+
+        # get behavior type
     	if msg[0] == "CIRCLE":
     		behavior_type = 0
     	elif msg[0] == "LINE":
     		behavior_type = 1
     	elif msg[0] == "PYRAMID":
     		behavior_type = 2
+    	elif msg[0] == "DIRECTION":
+    		behavior_type = 3
+    	else:
+    		behavior_type = -1
 
     	# parse location	
     	x = float(msg[1])
