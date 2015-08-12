@@ -31,6 +31,8 @@ class RobotComm(Protocol):
     		behavior_type = 2
     	elif msg[0] == "DIRECTION":
     		behavior_type = 3
+    	elif msg[0] == "KILL":
+    		behavior_type = 4
     	else:
     		behavior_type = -1
 
