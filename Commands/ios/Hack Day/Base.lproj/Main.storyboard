@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="66M-Wt-MWa">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFg-Y9-Jv8">
+                                <rect key="frame" x="419" y="421" width="181" height="179"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="181" id="gf4-q8-jr9"/>
+                                    <constraint firstAttribute="height" constant="179" id="vgL-FA-qBc"/>
+                                </constraints>
+                                <state key="normal" image="Estop-Button.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="emergencyStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q0Y-zv-Df4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uFg-Y9-Jv8" secondAttribute="bottom" id="QwO-yz-fZF"/>
+                            <constraint firstItem="66M-Wt-MWa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SZF-F9-yzR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uFg-Y9-Jv8" secondAttribute="trailing" constant="-16" id="TEG-mq-ya3"/>
+                            <constraint firstItem="66M-Wt-MWa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="WhO-Xk-icU"/>
+                            <constraint firstItem="66M-Wt-MWa" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="qLm-45-CRt"/>
+                            <constraint firstAttribute="trailing" secondItem="66M-Wt-MWa" secondAttribute="trailing" id="vOG-SE-kOW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="66M-Wt-MWa" id="FC6-7N-t5A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="281" y="337"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Estop-Button.jpg" width="180" height="179"/>
+    </resources>
+</document>

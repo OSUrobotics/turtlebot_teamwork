@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D808E4E1B7BD45D00E7C977 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D808E4D1B7BD45D00E7C977 /* main.m */; };
+		2D808E511B7BD45D00E7C977 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D808E501B7BD45D00E7C977 /* AppDelegate.m */; };
+		2D808E541B7BD45D00E7C977 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D808E531B7BD45D00E7C977 /* ViewController.m */; };
+		2D808E571B7BD45D00E7C977 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D808E551B7BD45D00E7C977 /* Main.storyboard */; };
+		2D808E591B7BD45D00E7C977 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D808E581B7BD45D00E7C977 /* Images.xcassets */; };
+		2D808E5C1B7BD45D00E7C977 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D808E5A1B7BD45D00E7C977 /* LaunchScreen.xib */; };
+		2D808E681B7BD45D00E7C977 /* Hack_DayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D808E671B7BD45D00E7C977 /* Hack_DayTests.m */; };
+		2D808E721B7BDDD500E7C977 /* Estop-Button.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2D808E711B7BDDD500E7C977 /* Estop-Button.jpg */; };
+		2D808E741B7C032B00E7C977 /* red-dot.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D808E731B7C032B00E7C977 /* red-dot.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2D808E621B7BD45D00E7C977 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2D808E401B7BD45D00E7C977 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D808E471B7BD45D00E7C977;
+			remoteInfo = "Hack Day";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2D808E481B7BD45D00E7C977 /* Hack Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hack Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D808E4C1B7BD45D00E7C977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D808E4D1B7BD45D00E7C977 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2D808E4F1B7BD45D00E7C977 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2D808E501B7BD45D00E7C977 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2D808E521B7BD45D00E7C977 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2D808E531B7BD45D00E7C977 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2D808E561B7BD45D00E7C977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2D808E581B7BD45D00E7C977 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2D808E5B1B7BD45D00E7C977 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		2D808E611B7BD45D00E7C977 /* Hack DayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hack DayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D808E661B7BD45D00E7C977 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D808E671B7BD45D00E7C977 /* Hack_DayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hack_DayTests.m; sourceTree = "<group>"; };
+		2D808E711B7BDDD500E7C977 /* Estop-Button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Estop-Button.jpg"; sourceTree = "<group>"; };
+		2D808E731B7C032B00E7C977 /* red-dot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red-dot.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2D808E451B7BD45D00E7C977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D808E5E1B7BD45D00E7C977 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D808E3F1B7BD45D00E7C977 = {
+			isa = PBXGroup;
+			children = (
+				2D808E4A1B7BD45D00E7C977 /* Hack Day */,
+				2D808E641B7BD45D00E7C977 /* Hack DayTests */,
+				2D808E491B7BD45D00E7C977 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2D808E491B7BD45D00E7C977 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2D808E481B7BD45D00E7C977 /* Hack Day.app */,
+				2D808E611B7BD45D00E7C977 /* Hack DayTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2D808E4A1B7BD45D00E7C977 /* Hack Day */ = {
+			isa = PBXGroup;
+			children = (
+				2D808E4F1B7BD45D00E7C977 /* AppDelegate.h */,
+				2D808E501B7BD45D00E7C977 /* AppDelegate.m */,
+				2D808E521B7BD45D00E7C977 /* ViewController.h */,
+				2D808E531B7BD45D00E7C977 /* ViewController.m */,
+				2D808E551B7BD45D00E7C977 /* Main.storyboard */,
+				2D808E581B7BD45D00E7C977 /* Images.xcassets */,
+				2D808E5A1B7BD45D00E7C977 /* LaunchScreen.xib */,
+				2D808E4B1B7BD45D00E7C977 /* Supporting Files */,
+			);
+			path = "Hack Day";
+			sourceTree = "<group>";
+		};
+		2D808E4B1B7BD45D00E7C977 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D808E731B7C032B00E7C977 /* red-dot.png */,
+				2D808E711B7BDDD500E7C977 /* Estop-Button.jpg */,
+				2D808E4C1B7BD45D00E7C977 /* Info.plist */,
+				2D808E4D1B7BD45D00E7C977 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2D808E641B7BD45D00E7C977 /* Hack DayTests */ = {
+			isa = PBXGroup;
+			children = (
+				2D808E671B7BD45D00E7C977 /* Hack_DayTests.m */,
+				2D808E651B7BD45D00E7C977 /* Supporting Files */,
+			);
+			path = "Hack DayTests";
+			sourceTree = "<group>";
+		};
+		2D808E651B7BD45D00E7C977 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2D808E661B7BD45D00E7C977 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2D808E471B7BD45D00E7C977 /* Hack Day */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D808E6B1B7BD45D00E7C977 /* Build configuration list for PBXNativeTarget "Hack Day" */;
+			buildPhases = (
+				2D808E441B7BD45D00E7C977 /* Sources */,
+				2D808E451B7BD45D00E7C977 /* Frameworks */,
+				2D808E461B7BD45D00E7C977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hack Day";
+			productName = "Hack Day";
+			productReference = 2D808E481B7BD45D00E7C977 /* Hack Day.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2D808E601B7BD45D00E7C977 /* Hack DayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D808E6E1B7BD45D00E7C977 /* Build configuration list for PBXNativeTarget "Hack DayTests" */;
+			buildPhases = (
+				2D808E5D1B7BD45D00E7C977 /* Sources */,
+				2D808E5E1B7BD45D00E7C977 /* Frameworks */,
+				2D808E5F1B7BD45D00E7C977 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D808E631B7BD45D00E7C977 /* PBXTargetDependency */,
+			);
+			name = "Hack DayTests";
+			productName = "Hack DayTests";
+			productReference = 2D808E611B7BD45D00E7C977 /* Hack DayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2D808E401B7BD45D00E7C977 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Personal Robotics Group";
+				TargetAttributes = {
+					2D808E471B7BD45D00E7C977 = {
+						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = NY8624AGB8;
+					};
+					2D808E601B7BD45D00E7C977 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 2D808E471B7BD45D00E7C977;
+					};
+				};
+			};
+			buildConfigurationList = 2D808E431B7BD45D00E7C977 /* Build configuration list for PBXProject "Hack Day" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2D808E3F1B7BD45D00E7C977;
+			productRefGroup = 2D808E491B7BD45D00E7C977 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D808E471B7BD45D00E7C977 /* Hack Day */,
+				2D808E601B7BD45D00E7C977 /* Hack DayTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2D808E461B7BD45D00E7C977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D808E571B7BD45D00E7C977 /* Main.storyboard in Resources */,
+				2D808E5C1B7BD45D00E7C977 /* LaunchScreen.xib in Resources */,
+				2D808E591B7BD45D00E7C977 /* Images.xcassets in Resources */,
+				2D808E741B7C032B00E7C977 /* red-dot.png in Resources */,
+				2D808E721B7BDDD500E7C977 /* Estop-Button.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D808E5F1B7BD45D00E7C977 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2D808E441B7BD45D00E7C977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D808E541B7BD45D00E7C977 /* ViewController.m in Sources */,
+				2D808E511B7BD45D00E7C977 /* AppDelegate.m in Sources */,
+				2D808E4E1B7BD45D00E7C977 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D808E5D1B7BD45D00E7C977 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D808E681B7BD45D00E7C977 /* Hack_DayTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D808E631B7BD45D00E7C977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2D808E471B7BD45D00E7C977 /* Hack Day */;
+			targetProxy = 2D808E621B7BD45D00E7C977 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2D808E551B7BD45D00E7C977 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D808E561B7BD45D00E7C977 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2D808E5A1B7BD45D00E7C977 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2D808E5B1B7BD45D00E7C977 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2D808E691B7BD45D00E7C977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2D808E6A1B7BD45D00E7C977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2D808E6C1B7BD45D00E7C977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Hack Day/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		2D808E6D1B7BD45D00E7C977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Hack Day/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		2D808E6F1B7BD45D00E7C977 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Hack DayTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hack Day.app/Hack Day";
+			};
+			name = Debug;
+		};
+		2D808E701B7BD45D00E7C977 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Hack DayTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hack Day.app/Hack Day";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D808E431B7BD45D00E7C977 /* Build configuration list for PBXProject "Hack Day" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D808E691B7BD45D00E7C977 /* Debug */,
+				2D808E6A1B7BD45D00E7C977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D808E6B1B7BD45D00E7C977 /* Build configuration list for PBXNativeTarget "Hack Day" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D808E6C1B7BD45D00E7C977 /* Debug */,
+				2D808E6D1B7BD45D00E7C977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2D808E6E1B7BD45D00E7C977 /* Build configuration list for PBXNativeTarget "Hack DayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D808E6F1B7BD45D00E7C977 /* Debug */,
+				2D808E701B7BD45D00E7C977 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2D808E401B7BD45D00E7C977 /* Project object */;
+}
