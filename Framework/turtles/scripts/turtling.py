@@ -8,7 +8,7 @@ import rospy
 import actionlib
 from geometry_msgs.msg import Pose
 from std_msgs.msg import String
-from move_base_msgs.msg import MoveBase
+from move_base_msgs.msg import MoveBaseAction
 
 from twisted.internet import reactor
 from twisted.internet.protocol import Factory, Protocol
@@ -20,7 +20,7 @@ class Turtling(Protocol):
 		self.clientsocket.connect((ip, port))
 		self.ip = ip
 
-		self.actionclient = actionlib.SimpleActionClient('move_base', MoveBase)
+		self.actionclient = actionlib.SimpleActionClient('move_base', MoveBaseAction)
 		self.actionclient.wait_for_server()
 
 	def pose_callback(self, msg):

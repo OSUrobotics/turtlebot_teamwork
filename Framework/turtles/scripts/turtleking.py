@@ -1,25 +1,24 @@
-#!/usr/bin/env/python
+#!/usr/bin/env python
 
 import rospy
+import sys
 
-from move_base_msgs.msg import MoveBase
-from std_msgs.msg import Int
+from move_base_msgs.msg import MoveBaseAction
+from std_msgs.msg import Int32
 from geometry_msgs.msg import Pose
 
 from twisted.internet import reactor
 from twisted.internet.protocol import Factory, Protocol
 
 class Turtleking(Protocol):
-	def __init__(self, ip, port):
-		self.ip = ip
-
+	def __init__(self):
 		self.client_number = 0
 		self.d = dict()
 		self.pending = {}
 		self.active = {}
 		self.clients = {}
 
-		self.turtles_pub = rospy.Publisher("/turtles", Int)
+		self.turtles_pub = rospy.Publisher("/turtles", Int32, queue_size=10)
 
 	def connectionMade(self):
 		print "a client connected"
@@ -27,7 +26,7 @@ class Turtleking(Protocol):
 		print "clients are ", self.factory.clients
 		self.client_number = self.client_number+1
 
-		self.clients[self] = self.client_number
+		# self.clients[self] = self.client_number
 
 		self.turtles_pub.publish(self.client_number)
 
@@ -120,11 +119,11 @@ if __name__ == '__main__':
 
 	rospy.init_node('turtleking', anonymous=True)
 
-	turtleking = Turtleking(ip, port_talk)
+	# turtleking = Turtleking(ip)
 
 	# Start the server/reactor loop
 	factory = Factory()
-	factory.protocol = turtleking
+	factory.protocol = Turtleking
 	factory.clients = []
-	reactor.listenTCP(port_listen, factory)
+	reactor.listenTCP(port, factory)
 	reactor.run()
